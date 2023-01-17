@@ -14,7 +14,7 @@ print('Directory exists: ' + str(path.exists('nonexistedirectory')))
 
 print('\n\nChecks existence by using \'isfile\' keyword')
 print('Is it a file? ' + str(path.isfile('python_files.txt')))
-print('Is is a directory? ' + str(path.isfile('WorkEarlyAcademyPython')))
+print('Is is a directory? ' + str(path.isdir('WorkEarlyAcademyPython')))
 
 
 
