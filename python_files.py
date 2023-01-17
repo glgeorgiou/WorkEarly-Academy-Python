@@ -8,7 +8,7 @@ file2.close()
 
 
 # Read from the file after checking its mode.
-print("Read from the file after checking its mode.")
+print("\n\nRead from the file after checking its mode.")
 file2 = open("python_files.txt", "r")
 if file2.mode == "r":
     contents = file2.read()
@@ -18,7 +18,7 @@ file2.close()
 
 
 # Read the first line from the file after checking its mode.
-print("Read the 1st line from the file after checking its mode.")
+print("\n\nRead the 1st line from the file after checking its mode.")
 file1 = open("python_files.txt", "r")
 if file1.mode == "r":
     contents = file1.readline()
@@ -28,7 +28,7 @@ file1.close()
 
 
 # Append a new line
-print("Append a new line")
+print("\n\nAppend a new line")
 file1 = open("python_files.txt", "a")
 file1.write("This is a new appended line")
 file1.close()
