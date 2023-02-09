@@ -1,4 +1,5 @@
-# Examples of regular expressions
+# Examples of regular expressions.
+# Source: Python course quiz 4 - reqular expressions
 import re
 
 
