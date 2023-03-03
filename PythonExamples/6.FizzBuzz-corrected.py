@@ -9,6 +9,7 @@ For example: if num is 16, then your program should return
 the string "1 2 Fizz 4 Buzz Fizz 7 8 Fizz Buzz 11 Fizz 13 14 FizzBuzz 16".
 The input will be within the range 1 - 50.
 
+---- Comments on correction after manual testing
 This file checks the last requirement 'The input will be within the range 1 - 50.' and
 converts the input string to a number.
 """
@@ -17,10 +18,11 @@ converts the input string to a number.
 def FizzBuzz(num):
     i = 1
     string = ''
-    if num not in range(1, 51):
+    numn = int(num)
+    if numn not in range(1, 51):
         return 0
     else:
-        while (i <= num):
+        while (i <= numn):
             if (i % 3 == 0) and (i % 5 == 0):
                 string += ' ' + "FizzBuzz"
             elif (i % 5 == 0):
@@ -33,4 +35,4 @@ def FizzBuzz(num):
         return string
 
 
-print(FizzBuzz(int(input())))
+print(FizzBuzz(input()))
