@@ -13,12 +13,12 @@ def DistinctList(arr):
 
     return duplicates
 
-
-# print(DistinctList(input()))
+# The input should be plane numbers: i.e. 12223
+print(DistinctList(input()))
 
 # My function call solution
-pinax = [1, 2, 2, 2, 3]
-print((DistinctList(pinax)))
+# pinax = [1, 2, 2, 2, 3]
+# print((DistinctList(pinax)))
 
 """
 The function DistinctList(arr) takes a list arr as input and returns the number of duplicates in the list. 
