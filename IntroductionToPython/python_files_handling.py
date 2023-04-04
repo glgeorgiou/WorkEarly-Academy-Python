@@ -38,7 +38,7 @@ print('tail: ', tail)
 dst = src + '.bak'
 shutil.copy(src, dst)
 
-# copy existed file by copying also the meta data date and time
+# copy existed file by copying also the metadata date and time
 shutil.copystat(src, dst)
 
 # Print meta data from the .bak file
