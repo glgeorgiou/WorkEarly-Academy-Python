@@ -38,7 +38,7 @@ print("\n--------------------Test case 1-----------------------")
 result = FizzBuzz(8)
 print('Input : 8')
 print("Expected result: 1 2 Fizz 4 Buzz Fizz 7 8")
-print("Actual result   {}".format((result)))
+print("Actual result   {}".format(result))
 result = 0
 
 print("\n--------------------Test case 2-----------------------")
@@ -51,10 +51,10 @@ result = 0
 print("\n--------------------Test case 3-----------------------")
 result = FizzBuzz(53)
 print('Input : 53')
-print("Actual result   {}".format((result)))
+print("Actual result   {}".format(result))
 result = 0
 
 print("\n--------------------Test case 4-----------------------")
 result = FizzBuzz(-1)
 print('Input : -1')
-print("Actual result   {}".format((result)))
+print("Actual result   {}".format(result))
