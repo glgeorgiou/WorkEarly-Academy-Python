@@ -25,7 +25,7 @@ def StarRating(strParam):
             list.append("empty")
     else:
         while num >= 1:
-            list.append("half")
+            list.append("full")
             num = num - 1
         if num > 0.25 and num < 0.75:
             list.append("half")
@@ -48,14 +48,14 @@ print("\n\t\t ============== Test Cases ==============")
 print("\n--------------------Test case A-----------------------")
 result = StarRating("0.38")
 print('Input : "0.38"')
-print("Expected result: full full full full half")
+print("Expected result: half empty empty empty empty")
 print("Actual result   {}".format(result))
 result = 0
 
 print("\n--------------------Test case B-----------------------")
-result = StarRating("0.38")
-print('Input :0.38')
-print("Expected result: half empty empty empty empty")
+result = StarRating("1.38")
+print('Input :1.38')
+print("Expected result: full half empty empty empty")
 print("Actual result   {}".format((result)))
 result = 0
 
