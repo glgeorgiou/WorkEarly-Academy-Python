@@ -3,16 +3,19 @@ Print the amount of numbers contained within the given string.
 If two or more numbers exist next to each other, their values need to be combined to a single number.
 """
 
+import re
 
 def BasicAssignmentExercise5(strParam):
     # code goes here
+    """ My Solution
     nCounter = 0
-
     for char in strParam:
         if char.isnumeric():
             nCounter += 1
+    """
+    result = re.findall(r'\d+', strParam)
 
-    return nCounter
+    return len(result)
 
 
 print("\n\t\t ============== Test Cases ==============")
