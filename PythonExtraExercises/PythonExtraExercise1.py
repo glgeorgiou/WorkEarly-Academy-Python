@@ -28,10 +28,13 @@ timezone  (hour,  minute,second, microsecond, tzone),
 but they are optional, and has a default value of 0, (Nonefor timezone).
 """
 
-from datetime import  datetime nts = [] #convert to datetime for testing
+from datetime import datetime
+
+nts = []  # convert to datetime for testing
 
 for t in nts:
     nts.append(datetime.strptime(t, '%Y-%m-%d'))
+
 
 def group_week(ts, delim='-'):
     '''
@@ -45,7 +48,7 @@ def group_week(ts, delim='-'):
     :return:
     '''
     out, week, week_ind = [], [], 0
-    for i,t in enumerate(ts):
+    for i, t in enumerate(ts):
         if i == 0:
             week.append(t)
             start_date = datetime.strptime(t, f'%Y{delim}%m{delim}%d')
@@ -71,9 +74,9 @@ def group_week(ts, delim='-'):
 
         return out
 
-
     ts = ['2019-01-01', '2019-01-02', '2019-01-08', '2019-02-01', '2019-02-02', '2019-02-05']
-    print(group_week(ts))
+    result = group_week(ts)
+    print(result)
 
     '''
     Expected output
