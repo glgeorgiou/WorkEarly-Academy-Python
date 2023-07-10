@@ -37,7 +37,7 @@ for t in nts:
 
 
 def group_week(ts, delim='-'):
-    '''
+    """
     Groups an ordered list of timestamps as strings by week.
     The first day of the first week is defined by the earliest timestamp.
     Dates should be ordered by year, month and day.
@@ -46,7 +46,10 @@ def group_week(ts, delim='-'):
       ts: str, list of timestamps
      delim: str, delimeter that separates the date
     :return:
-    '''
+    :param ts:
+    :param delim:
+    :return:
+    """
     out, week, week_ind = [], [], 0
     for i, t in enumerate(ts):
         if i == 0:
@@ -74,11 +77,12 @@ def group_week(ts, delim='-'):
 
         return out
 
-    ts = ['2019-01-01', '2019-01-02', '2019-01-08', '2019-02-01', '2019-02-02', '2019-02-05']
-    result = group_week(ts)
-    print(result)
 
-    '''
+ts = ['2019-01-01', '2019-01-02', '2019-01-08', '2019-02-01', '2019-02-02', '2019-02-05']
+result = group_week(ts)
+print(result)
+
+"""
     Expected output
     output = [
     ['2019-01-01', '2019-01-02'],
@@ -86,4 +90,4 @@ def group_week(ts, delim='-'):
       ['2019-02-01', '2019-02-02'],
        ['2019-02-05']
        ]
-    '''
+"""
